@@ -1,0 +1,15 @@
+.carousel-home {
+    animation: slide 15s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -85%;
+    }
+  }
