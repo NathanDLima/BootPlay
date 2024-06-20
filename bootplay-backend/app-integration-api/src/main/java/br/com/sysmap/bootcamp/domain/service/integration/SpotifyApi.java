@@ -15,9 +15,10 @@ import java.util.List;
 @Service
 public class SpotifyApi {
 
+    //Utilize uma conta Spotify para gerar o ClientId e ClientSecret no Spotify Developer Dashboard
     private se.michaelthelin.spotify.SpotifyApi spotifyApi = new se.michaelthelin.spotify.SpotifyApi.Builder()
-            .setClientId("07787ed997e44093a5e59e5e4bb16e11")
-            .setClientSecret("ff7fcd223ba64c79a8903590b4d48d52")
+            .setClientId("")
+            .setClientSecret("")
             .build();
 
     public List<AlbumModel> getAlbums(String search) throws IOException, ParseException, SpotifyWebApiException {
