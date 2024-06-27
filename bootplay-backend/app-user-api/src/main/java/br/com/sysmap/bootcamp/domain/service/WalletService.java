@@ -48,7 +48,7 @@ public class WalletService {
         String decodedToken = new String(Base64.getDecoder().decode(token));
         String email = decodedToken.split(":")[0];
 
-        
+
         Users user = usersService.findByEmail(email);
         return this.walletRepository.findByUsers(user).orElseThrow(() -> new RuntimeException("Wallet does not exists in this user"));
 
