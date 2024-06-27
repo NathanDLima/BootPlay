@@ -23,7 +23,7 @@ services:
 
   bootcamp-user-api:
     build:
-      context: ../nathan-lima-backend/app-user-api
+      context: ../bootplay-backend/app-user-api
       dockerfile: ../app-user-api/Dockerfile
     image: nathandvlima/app-user-api:latest
     ports:
@@ -44,7 +44,7 @@ services:
 
   bootcamp-integration-api:
     build:
-      context: ../nathan-lima-backend/app-integration-api
+      context: ../bootplay-backend/app-integration-api
       dockerfile: ../app-integration-api/Dockerfile
     image: nathandvlima/app-integration-api:latest
     ports:
